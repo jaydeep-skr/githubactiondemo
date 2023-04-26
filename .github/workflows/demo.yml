@@ -1,0 +1,15 @@
+name: demo action
+
+on: 
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    branches:
+      - 'main'
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: demo step1
+        run: echo "hello world"
